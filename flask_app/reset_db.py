@@ -24,3 +24,4 @@ with app.app_context():
         jane.set_password('doe123')
 
         db.session.add_all([admin,john,jane])
+        db.session.commit()
