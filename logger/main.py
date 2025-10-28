@@ -1,6 +1,6 @@
 from pynput import keyboard, mouse
-from keyboard_monitor import KeyboardMonitor
-from mouse_monitor import MouseMonitor
+from monitors.keyboard_monitor import KeyboardMonitor
+from monitors.mouse_monitor import MouseMonitor
 import threading
 def run_keyboard_listener():
     with keyboard.Listener(on_press=KeyboardMonitor.on_press,on_release=KeyboardMonitor.on_release) as listener:
